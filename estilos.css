@@ -1,0 +1,87 @@
+.btn-group .btn{
+    width:30%;
+    height:120px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size:600%;
+    outline: none;
+    font-family: cursive;
+}
+*{
+    max-width:443px;
+}
+/* .campo{
+    min-width: 443px;
+} */
+.pontos{
+    background-color: rgba(153, 205, 50, 0.486);
+    font-size:22px;
+    width:100%;
+    margin-left:0px;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.575),1px 0px 0px rgba(0, 0, 0, 0.815) ;
+}
+.pontos small{
+    font-size:12px;
+}
+#modalErro{
+    margin-top:40vh;
+}
+.jogCorrente{
+    width:30px;
+    height: 30px;
+    border-radius:50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.modal .modal-content{
+    background-color: rgba(0, 0, 0, 0.774);
+    color: white;
+}
+/* Linhas de destaque ao se ganhar */
+.linhaH{
+    width:82%;
+    height:5px;
+    margin-left:32px;
+}
+.lh1{
+    margin-top:62px;
+}
+.lh2{
+    margin-top:115px;
+}
+.lh3{
+    margin-top:115px;
+}
+.linhaV{
+    width:82%;
+    height:5px;
+    transform: rotate(90deg);
+}
+.lv1{
+    margin-left:-89px;
+    margin-top: -129px;
+}
+.lv2{
+    margin-top:-6px;
+    margin-left:29px;
+}
+.lv3{
+    margin-top:-6px;
+    margin-left:156px;
+}
+.linhaD{
+    max-width:800px;
+    width:115%;
+    height:5px;
+    margin-top:-4px;
+}
+.ld1{
+    transform: rotate(45deg);
+    margin-left: -35px;
+}
+.ld2{
+    transform: rotate(-45deg);
+    margin-left:-45px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha do Fabião</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap3+++4.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css">
+
+    <!-- Favicon  -->
+<link rel="icon" href="favicon.png">
+
+</head>
+<body class="bg-dark">
+    
+    <div class="container-fluid">
+        <div class="jogCorrente"></div>
+        <header>
+            <img src="logo1.png" class="w-100 logo" style="height:180px;">
+        </header>
+        <div class="row campo">
+            <div class="col-xs-12">
+                <div class="btn-group ml-4 w-100">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-group ml-4 w-100">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="btn-group ml-4 w-100">
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <div class="linhasDestaque">
+                <div class="linhaH lh1"></div>
+                <div class="linhaH lh2"></div>
+                <div class="linhaH lh3"></div>
+
+                <div class="linhaV lv1"></div>
+                <div class="linhaV lv2"></div>
+                <div class="linhaV lv3"></div>
+
+                <div class="linhaD ld1"></div>
+                <div class="linhaD ld2"></div>
+            </div>
+        </div>
+        <div class="row fixed-bottom text-white pontos">
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li class="text-danger"><span id="jog1">Jogador1</span>: <span id="pt1">0</span> <small>Pontos</small></li>
+                    <li class="float-right text-info"><span id="jog2">Jogador2</span>: <span id="pt2">0</span> <small>Pontos</small></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="janelaInfo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <h4 class="text-center">Informações dos Jogadores</h4>
+                </div>
+                <div class="modal-body pb-0">
+                    <form class="">
+                        <div class="form-group">
+                            <label for="nome1" class="label-control">Nome do Jogador1:</label>
+                            <input type="text" class="form-control w-75" id="nome1">
+                        </div>
+                        <div class="form-group">
+                            <label for="nome2" class="label-control">Nome do Jogador2:</label>
+                            <input type="text" class="form-control w-75" id="nome2">
+                        </div>
+                    </form>
+                    <div class="alert alert-danger w-50 m-0 d-none">
+                        <span class="glyphicon glyphicon-warning-sign"></span> Nenhum dos campos pode estar vazio!
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" id="btnComeca">Começar a Jogar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalErro">
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger p-0">
+                <div class="modal-body">
+                    <h1 class="m-0 text-center" style="color: white;">Ocupado</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalInfo">
+        <div class="modal-dialog">
+            <div class="modal-content text-white p-0">
+                <div class="modal-body">
+                    <h1 class="m-0 text-center">Vencedor: <span id="vencedor"></span></h1>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
